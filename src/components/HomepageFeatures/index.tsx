@@ -1,140 +1,113 @@
-import Link from '@docusaurus/Link';
-import Translate from '@docusaurus/Translate';
-import React from 'react';
-import '../../css/homepage-features.scss';
+import Link from "@docusaurus/Link";
+import Translate from "@docusaurus/Translate";
+import React from "react";
+import "../../css/homepage-features.scss";
 
 type FeatureItem = {
   title: JSX.Element;
   link: string;
-  iconClass: string;
+  img: string;
+  button: JSX.Element;
+  color: string;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: <Translate>About Astar</Translate>,
-    link: '/docs/about/astar',
-    iconClass: 'aboutastar',
+    title: <Translate>Learn about Astar</Translate>,
+    link: "/docs/about/astar",
+    img: "learn.svg",
+    button: <Translate>Read the docs</Translate>,
+    color: "#E0338F",
     description: (
       <>
         <Translate>
-          Get to know what Astar Network is solving and all the information
-          related to our native token.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Translate>
       </>
     ),
   },
   {
-    title: <Translate>Ecosystem</Translate>,
-    link: '/docs/ecosystem/',
-    iconClass: 'ecosystem',
+    title: <Translate>Use ASTAR tokens</Translate>,
+    link: "/docs/about/astar",
+    img: "use.svg",
+    button: <Translate>See how to use</Translate>,
+    color: "#9256ED",
     description: (
       <>
         <Translate>
-          Dive into our ecosystem and discover more about Polkadot, Substrate
-          and other initiatives.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Translate>
       </>
     ),
   },
   {
-    title: <Translate>Build</Translate>,
-    link: '/docs/build/',
-    iconClass: 'wrench',
+    title: <Translate>Build dApps</Translate>,
+    link: "/docs/about/astar",
+    img: "build.svg",
+    button: <Translate>Play with code</Translate>,
+    color: "#3D73FF",
     description: (
       <>
         <Translate>
-          Find all the resources you need in order to start testing, deploying,
-          and interacting with smart contracts on the network.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Translate>
       </>
     ),
   },
   {
-    title: <Translate>dApp Staking</Translate>,
-    link: '/docs/dapp-staking/',
-    iconClass: 'staking',
+    title: <Translate>Learn through tutorials</Translate>,
+    link: "/docs/about/astar",
+    img: "tutorials.svg",
+    button: <Translate>View tutorials</Translate>,
+    color: "#00BFD9",
     description: (
       <>
         <Translate>
-          Earn tokens for yourself and your dApp by staking tokens and
-          registering your dApp with Astar’s dApp Staking.
-        </Translate>
-      </>
-    ),
-  },
-  {
-    title: <Translate>Run A Node</Translate>,
-    link: '/docs/nodes/',
-    iconClass: 'node',
-    description: (
-      <>
-        <Translate>
-          Explain how to run full nodes, collators, indexers, and everything you
-          need to know related to infrastructure.
-        </Translate>
-      </>
-    ),
-  },
-  {
-    title: <Translate>Learn Cross-Chain Message (XCM)</Translate>,
-    link: '/docs/xcm/',
-    iconClass: 'broadcast',
-    description: (
-      <>
-        <Translate>
-          Explain how XCM is used in Astar and how developers can use it to
-          interact with the rest of the Polkadot network.
-        </Translate>
-      </>
-    ),
-  },
-  {
-    title: <Translate>Integrate Toolings</Translate>,
-    link: '/docs/integrations/',
-    iconClass: 'tool',
-    description: (
-      <>
-        <Translate>
-          Provide relevant information about the wallets, bridges, indexers, and
-          oracles that are integrated with the network.
-        </Translate>
-      </>
-    ),
-  },
-  {
-    title: <Translate>User Guides</Translate>,
-    link: '/docs/user-guides/',
-    iconClass: 'docs',
-    description: (
-      <>
-        <Translate>
-          Learn how to create different types of wallets, obtain tokens, and
-          manage your assets.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </Translate>
       </>
     ),
   },
 ];
 
-function Feature({ title, iconClass, description, link }: FeatureItem) {
+function Feature({
+  title,
+  img,
+  button,
+  color,
+  description,
+  link,
+}: FeatureItem) {
   return (
-    <Link to={link} className="box">
-      <div className="row--title">
-        <div className={`${iconClass} icon`} />
-        <span className="text--title">{title}</span>
+    <div className="feature-item">
+      <div className="feature-item__image">
+        <img src={`/img/homepage/${img}`} />
       </div>
+      <h3 className="feature-item__title">{title}</h3>
       <div className="row--description">
         <span className="text--description">{description}</span>
       </div>
-    </Link>
+      <Link
+        to={link}
+        className="feature-item__button"
+        style={{ backgroundColor: `${color}` }}
+      >
+        {button}
+      </Link>
+    </div>
   );
 }
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className="section--front-page">
-      <div className="container--front-page">
+    <section>
+      <h2 className="homepage-title">How would you like to get started?</h2>
+      <div className="feature-list">
         {FeatureList.map((props, idx) => (
           <Feature key={idx} {...props} />
         ))}

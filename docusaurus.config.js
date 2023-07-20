@@ -75,33 +75,33 @@ const config = {
             type: 'doc',
             docId: 'getting-started',
             position: 'left',
-            label: 'Docs',
+            label: 'Learn',
           },
           {
             type: 'doc',
             docId: 'build/index',
             position: 'left',
-            label: 'Start Building',
+            label: 'Use',
           },
           {
             to: 'https://medium.com/astar-network',
-            label: 'Medium',
+            label: 'Build',
             position: 'left',
           },
           {
             to: 'https://www.youtube.com/channel/UC36JgEF6gqatVSK9xlzzrvQ',
-            label: 'Youtube',
+            label: 'Tutorials',
             position: 'left',
           },
           {
             type: 'localeDropdown',
             position: 'right',
           },
-          {
-            href: 'https://github.com/AstarNetwork/astar-docs',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/AstarNetwork/astar-docs',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
