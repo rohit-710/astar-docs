@@ -66,7 +66,7 @@ coming soon...
 
 ### The Price Oracle Response
 
-An example JSON response will look like this.
+An example JSON response from Blockscout Price Oracle will look like this.
 
 ```json
 {
@@ -76,4 +76,4 @@ An example JSON response will look like this.
 }
 ```
 
-- {`average`, `fast`, `slow`} are gas prices in Gwei, you can use these prices before sending the transaction off to Astar zkEVM.
+- {`average`, `fast`, `slow`} are gas prices in Gwei, you can use these prices before sending the transaction to Astar zkEVM.
