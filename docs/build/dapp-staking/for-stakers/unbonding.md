@@ -16,22 +16,18 @@ Bonding is a process by which tokens are temporarily locked. Staking is one of t
 ## How to unbond
 
 If you have staked on one of the dApps, you can now click on `Unbond` from `My dApps Panel` to make your tokens transferable.
-<div style={{textAlign: 'center'}}>
 
-![16_MydApps](img/16_MydApps.png)
-</div>
+<Figure src={require('/docs/build/dapp-staking/for-stakers/img/16_MydApps.png').default} width="100%"/>
 
 Select the amount you want to **Unbond**, and click on **Max** to unbond your complete stake. To sign your transaction click on **Start Unbonding**.
-<div style={{textAlign: 'center'}}>
-<img width="576" alt="20_unbonding_modal" src="https://user-images.githubusercontent.com/77480847/206718017-3b844c2f-f12e-4b2b-a6f9-d95c215d295f.png" width="200" />
-</div>
+
+<Figure src={require('/docs/build/dapp-staking/for-stakers/img/start_unbonding.png').default} width="65%"/>
 
 ---
 
 Check your **Chunks**
-<div style={{textAlign: 'center'}}>
-<img width="1168" alt="15_Unbonding" src="https://user-images.githubusercontent.com/77480847/206512645-4ba23626-f4a5-4079-83a1-bc6027b13c5c.png"/>
-</div>
+
+<Figure src={require('/docs/build/dapp-staking/for-stakers/img/unbonding.png').default} width="65%"/>
 
 What's a Chunk? A chunk is the number of different ERA's you want to unbond your tokens. Chunks do not equal the amount of unbonding on dApps you requested but the amount of different ERA's you unbonded your tokens.
 

@@ -19,12 +19,12 @@ This function is only available for stakers who are already staking in a dApp. I
 I staked some SDN tokens on *Community Rewards* but want to transfer a portion to another dApp  to support them with my vote by staking on their dApp.
 First, you open the transfer page by clicking on the **Stake** button on the dApp you wish to support.
 
-![24_nomination01](img/22_nomination01.png)
+<Figure src={require('/docs/build/dapp-staking/for-stakers/img/22_nomination01.png').default} width="100%"/>
 
 You can select what funds you would like to use, funds that are transferable and in your wallet, or use it from another dApp you are staking on. In this case, I want to transfer some funds from *Community Rewards*. Enter the amount you wish to transfer (in the case of Shiden, the minimum is 50 SDN) and click on **Stake**. At the end of the process, you finalize by signing the transaction.
 
-![24_nomination02](img/23_nomination02.png)
+<Figure src={require('/docs/build/dapp-staking/for-stakers/img/22_nomination02.png').default} width="100%"/>
 
 Now you see that you transferred a part of your staked amount to the new dApp without having to unbond your tokens.
 
-![24_nomination03](img/24_nomination03.png)
+<Figure src={require('/docs/build/dapp-staking/for-stakers/img/22_nomination03.png').default} width="100%"/>
