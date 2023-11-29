@@ -6,131 +6,92 @@ sidebar_position: 1
 
 import Figure from '/src/components/figure'
 
-Follow these steps to interact with the Astar Wallet snap
-[Portal](https://portal.astar.network/). The
-[source code](https://github.com/AstarNetwork/metamask-snap-astar/tree/master/packages/example)
-for the example dApp is available as part of the repository. This guide assumes
-that MetaMask is [installed](https://metamask.io/download/) and properly
-configured.
+Astar Wallet Snap の運用を進めるには以下のステップに従ってください。([Portal](https://portal.astar.network/))
+例として用いる dapp の[ソースコード](https://github.com/AstarNetwork/metamask-snap-astar/tree/master/packages/example)
+はレポジトリの一部分としてご利用いただけます。このガイドは Metamask が
+[インストール](https://metamask.io/download/)されていて、適切に設定されていることを想定しています。
 
-## Connect to the Portal
+## Portal への接続
 
-Click the webpage button labeled "Astar Snap" with the MetaMask logo
+Metamask のロゴで"Astar Snap"とラベル付けされている Web ページのボタンを押してください。
 
-<Figure caption='Connect to the Portal' src={require('/docs/use/manage-wallets/wallet-providers/img/01.png').default } width="100%" />
+<Figure caption='Portalへの接続' src={require('/docs/use/manage-wallets/wallet-providers/img/01.png').default } width="100%" />
 
-## Review & Accept Third-Party Software Notice
+## サードパーティソフトウェアに関する注意の確認及び承認
 
-Click the arrow to view the entire third-party software notice and, if you
-accept it, click the MetaMask "Third-party software notice" button labeled
-"Accept" to accept the MetaMask third-party software notice.
+矢印をクリックしてサードパーティソフトウェアに関する注意を全て表示し、それを承認する場合は、MetaMask の「Third-party software notice」ラベル上の「Accept」ボタンをクリックして MetaMask のサードパーティソフトウェアに関する注意を承認してください。
 
 <!-- markdownlint-disable MD033 -->
 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
   <div style={{ marginRight: '10px' }}>
-    <Figure caption='Review 3rd-Party Software Notice' src={require('/docs/use/manage-wallets/wallet-providers/img/02.png').default } width="100%" />
+    <Figure caption='サードパーティソフトウェアに関する注意を確認する' src={require('/docs/use/manage-wallets/wallet-providers/img/02.png').default } width="100%" />
   </div>
   <div>
-    <Figure caption='Accept 3rd-Party Software Notice' src={require('/docs/use/manage-wallets/wallet-providers/img/03.png').default } width="100%" />
+    <Figure caption='サードパーティソフトウェアに関する注意を承認する' src={require('/docs/use/manage-wallets/wallet-providers/img/03.png').default } width="100%" />
   </div>
 </div>
 
-## Review & Accept Connection Request
+## 接続リクエストの確認及び承認
 
-Review the connection request and, if you accept it, click the MetaMask
-"Connection request" button labeled "Connect" to accept the Astar Wallet snap
-connection request.
+接続リクエストを確認し、受け入れる場合は、MetaMask の「Connection request」ラベル上の「Connect」ボタンをクリックして、Astar Wallet Snap の接続リクエストを受け入れてください。
 
-<Figure caption='Connection Request' src={require('/docs/use/manage-wallets/wallet-providers/img/04.png').default } width="40%" />
+<Figure caption='接続リクエスト' src={require('/docs/use/manage-wallets/wallet-providers/img/04.png').default } width="40%" />
 
-## Review Snap Permissions & Begin Installation
+## Snap への承認事項を確認してインストールを開始する
 
-Click the arrow to view the entire list of permissions required by the Astar
-Wallet snap and, if you accept them, click the MetaMask "Install snap" button
-labeled "Install" to begin installing the Astar Wallet snap.
+矢印をクリックして Astar Wallet Snap が必要とする権限のリストを全て表示し、それらを受け入れる場合は、「Install Snap」ラベル上の「Install」ボタンをクリックして、Astar Wallet Snap のインストールを開始してください。
 
 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
   <div style={{ marginRight: '10px' }}>
-    <Figure caption='Review Permissions' src={require('/docs/use/manage-wallets/wallet-providers/img/05.png').default } width="100%" />
+    <Figure caption='承認事項の確認' src={require('/docs/use/manage-wallets/wallet-providers/img/05.png').default } width="100%" />
   </div>
   <div>
-    <Figure caption='Begin Installation' src={require('/docs/use/manage-wallets/wallet-providers/img/06.png').default } width="100%" />
+    <Figure caption='インストール開始' src={require('/docs/use/manage-wallets/wallet-providers/img/06.png').default } width="100%" />
   </div>
 </div>
 
-## Confirm Elevated Permissions & Complete Installation
+## 高度な許可事項を承認し、インストールを完了する
 
-Because the Astar Wallet snap has permission to control accounts for the
-Astar & Shiden Networks (whose tokens carry real economic value), it's
-necessary to review and confirm this elevated level of access. If you accept
-this elevated level of access, check the boxes and click the MetaMask "Proceed with
-caution" button labeled "Confirm" to confirm the elevated level of access and
-install the Astar Wallet snap. Click the MetaMask "Installation complete"
-button labeled "OK" to continue to the example dApp.
+Astar Wallet Snap が Astar 及び Shiden Network （トークンが実際の資産価値を持ってるブロックチェーン）のアカウントを制御する権限を持っているため、より高度なアクセスレベルを確認及び承認する必要があります。このアクセスレベルを受け入れる場合は、チェックボックスをチェックし、 MetaMask の「Proceed with caution」ラベル上の「Confirm」ボタンをクリックして高度なアクセスレベルを承認し、Astar Wallet Snap をインストールしてください。次に、MetaMask の「Installation complete」ラベル上の 「OK」ボタンをクリックして、dApp の例に進んでください。
 
 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
   <div style={{ marginRight: '10px' }}>
-    <Figure caption='Review Elevated Permissions' src={require('/docs/use/manage-wallets/wallet-providers/img/07.png').default } width="100%" />
+    <Figure caption='高度な許可事項を確認する' src={require('/docs/use/manage-wallets/wallet-providers/img/07.png').default } width="100%" />
   </div>
   <div style={{ marginRight: '10px' }}>
-    <Figure caption='Confirm Elevated Permissions' src={require('/docs/use/manage-wallets/wallet-providers/img/08.png').default } width="100%" />
+    <Figure caption='高度な許可事項を承認する' src={require('/docs/use/manage-wallets/wallet-providers/img/08.png').default } width="100%" />
   </div>
   <div>
-    <Figure caption='Installation is Complete' src={require('/docs/use/manage-wallets/wallet-providers/img/09.png').default } width="100%" />
+    <Figure caption='インストール完了' src={require('/docs/use/manage-wallets/wallet-providers/img/09.png').default } width="100%" />
   </div>
 </div>
 
-## Review Account Details
+## アカウントの詳細を確認する
 
-The Astar Wallet snap is configured to default to the
-[Shibuya Network](https://wiki.polkadot.network/docs/maintain-networks#westend-test-network),
-which is the official test network of the Astar ecosystem. Notice the address
-& the public key for the account that were derived using the entropy from your
-MetaMask seed phrase. The address will change depending on the selected
-network - for this example, only the Shibuya Network is used. The public key
-does _not_ depend on the network and will always be the same. As with all
-asymmetric cryptography systems, the public key is complemented by a private
-key, which will be used to sign a message in the next step.
+Astar Wallet Snap は、Astar エコシステムの公式テストネットワークである [Shibuya Network](https://wiki.polkadot.network/docs/maintain-networks#westend-test-network) にデフォルトで設定されています。メタマスクのシードフレーズによるエントロピーを使用して導出されたアカウントのアドレスと公開鍵に注目してください。選択したネットワークに応じてアドレスが変わりますが、この例では Shibuya Network のみが使用されています。公開鍵はネットワークに*依存せず*、常に同じです。非対称暗号システム全般において、公開鍵はプライベートキーと補完関係にあり、次のステップでメッセージに署名するために使用されます。
 
-<Figure caption='Account Details' src={require('/docs/use/manage-wallets/wallet-providers/img/10.png').default } width="100%" />
+<Figure caption='アカウントの詳細' src={require('/docs/use/manage-wallets/wallet-providers/img/10.png').default } width="100%" />
 
-## Acquire Tokens for the Shibuya Test Network
+## Shibuya テストネット上のトークンを手にいれる
 
-Go to the token section and click on the faucet button
-for the Shibuya Network. If you are not a robot, check the box
-labeled "I'm not a robot" (the faucet for the Shibuya Network does not currently
-support robots 🤖). Click the button labeled "Confirm".
+トークンのセクションに移動し、Shibuya Network の faucet ボタンをクリックしてください。ロボットでない場合は、「I'm not a robot」のチェックボックスをチェックしてください（Shibuya Network の faucet は現在、自動操作をサポートしていません 🤖）。"Confirm"とラベル付けされたボタンをクリックします。
 
-Optionally, you can view the transaction (extrinsic) details for the faucet
-transaction. If you'd like to view these details, copy the transaction hash from the notification toast.
-Visit [https://shibuya.subscan.io](https://shibuya.subscan.io) and search for the hash.
+オプションで、faucet トランザクションの詳細（extrinsic）を表示することができます。これらの詳細を表示したい場合は、通知トーストからトランザクションハッシュをコピーしてください。[https://shibuya.subscan.io](https://shibuya.subscan.io) に移動し、ハッシュを検索してください。
 
-Return to the portal dApp and review your account balance - it should be 10
-SBYs.
+ポータルに戻り、アカウント残高を確認してください - 10 SBY 所持しているはずです。
 
-<Figure caption='Click Faucet Button' src={require('/docs/use/manage-wallets/wallet-providers/img/11.png').default } width="100%" />
-<Figure caption='Review Faucet Confirmation' src={require('/docs/use/manage-wallets/wallet-providers/img/12.png').default } width="100%" />
-<Figure caption='Review Faucet Transaction' src={require('/docs/use/manage-wallets/wallet-providers/img/13.png').default } width="100%" />
+<Figure caption='Fausetボタンをクリックしてください' src={require('/docs/use/manage-wallets/wallet-providers/img/11.png').default } width="100%" />
+<Figure caption='Fausetの承認事項を確認してください' src={require('/docs/use/manage-wallets/wallet-providers/img/12.png').default } width="100%" />
+<Figure caption='Fausetトランザクションをご確認いただけます' src={require('/docs/use/manage-wallets/wallet-providers/img/13.png').default } width="100%" />
 
-## Transfer Tokens to Another Account
+## 他のアカウントへのトークンの送金
 
-Enter a valid Shibuya Network address in the portal dApp's "Transfer" tab and
-field labeled "To" - for example, use the address:
-`aCiXU739xA4wGb8Sipp8T1XhDsfcLACmRFJTSYqCiLqWdJ2`. In the "Transfer" tab, amount field
-labeled "SBY" enter a relatively small (e.g. 10) number that represents the
-number of tokens to transfer. Click the "Transfer" tab button labeled
-"Confirm". Review the MetaMask notification that describes the action that will be
-taken and, if you approve, click the MetaMask button labeled "Approve". After a
-second or two, a dialog with transaction details will appear at the top of
-the page. The transaction details notification toast will appear in the portal
-dApp's and you can click it.
+ポータルの「Transfer」タブおよび「To」とラベル付けされたフィールドに、Shibuya Network の有効なアドレスを入力してください。例えば、次のアドレスを使用できます：`aCiXU739xA4wGb8Sipp8T1XhDsfcLACmRFJTSYqCiLqWdJ2`。"Transfer"タブの"SBY"とラベルされた金額フィールドに、転送するトークンの数量を表す比較的小さな数値（例：10）を入力してください。「Transfer」タブ「Confirm」ボタンをクリックします。動作の説明が書かれた MetaMask の通知を確認し、承認する場合は MetaMask の「Approve」ボタンをクリックします。1 秒か 2 秒後、ページの上部にトランザクションの詳細が表示されるダイアログが表示されます。トランザクションの詳細通知トーストがポータルに表示され、それをクリックできます。
 
-<Figure caption='Enter Account Address' src={require('/docs/use/manage-wallets/wallet-providers/img/18.png').default } width="100%" />
-<Figure caption='Review Faucet Confirmation' src={require('/docs/use/manage-wallets/wallet-providers/img/19.png').default } width="40%" />
-<Figure caption='Review Faucet Transaction' src={require('/docs/use/manage-wallets/wallet-providers/img/20.png').default } width="100%" />
+<Figure caption='アカウントアドレスの記入' src={require('/docs/use/manage-wallets/wallet-providers/img/18.png').default } width="100%" />
+<Figure caption='Faucet の認証事項の確認' src={require('/docs/use/manage-wallets/wallet-providers/img/19.png').default } width="40%" />
+<Figure caption='Fauset Transactionの確認' src={require('/docs/use/manage-wallets/wallet-providers/img/20.png').default } width="100%" />
 
-## Conclusion
+## 最後に
 
-That concludes the Astar Wallet snapPortal dApp demo. If you have any
-questions or believe you have found an error or bug, please
-[open an Issue](https://github.com/AstarNetwork/metamask-snap-astar/issues/new).
+Astar Wallet Snap のポータルを用いたデモは以上です。質問、またはエラーやバグの発見については GitHub 上で[Issue の作成](https://github.com/AstarNetwork/metamask-snap-astar/issues/new)をお願いいたします。
