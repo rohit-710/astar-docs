@@ -104,7 +104,7 @@
 		"description": "The label for category Manage Wallets in sidebar tutorialSidebar"
 	},
 	"sidebar.tutorialSidebar.category.Wallet Providers": {
-		"message": "Wallet Providers",
+		"message": "Walletプロバイダー",
 		"description": "The label for category Wallet Providers in sidebar tutorialSidebar"
 	},
 	"sidebar.tutorialSidebar.category.Create an Astar Wallet": {
