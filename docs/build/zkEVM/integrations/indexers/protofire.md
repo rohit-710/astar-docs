@@ -19,7 +19,7 @@ This project brings The Graph protocol services, the #1 open-source data indexin
 
 ## [Credentials](#subgraph)
 
-To start to use **TheGraph-Astar** infrastructure you need to receive some credentials to be able to authenticate to the endpoints. These include:
+To start to use **TheGraph-Astar** infrastructure you need to first obtain some credentials to be able to authenticate to the endpoints. These include:
  - Username
  - Password
  - Basic Authentication
